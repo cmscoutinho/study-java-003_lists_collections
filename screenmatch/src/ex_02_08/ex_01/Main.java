@@ -29,6 +29,11 @@ public class Main {
         System.out.println("Quantidade de produtos: %d.".formatted(produtos.size()));
 
         int posicao = 2;
-        System.out.println("Produto da posição %d: %s.".formatted(posicao,produtos.get(posicao).getNome()));
+        System.out.println("Produto da posição %d: %s.".formatted(posicao,produtos.get(posicao)));
+
+        System.out.println("Imprimindo todos:");
+        for (Produto produto : produtos) {
+            System.out.println(produto);
+        }
     }
 }
