@@ -1,5 +1,6 @@
 package ex_02_08.ex_01;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Main {
@@ -23,5 +24,9 @@ public class Main {
         for (Produto produto : produtos) {
             System.out.println(produto);
         }
+
+        ProdutoPerecivel perecivel = new ProdutoPerecivel("Coxão mole", 45.50, 1, LocalDate.of(2024, 6, 5));
+        System.out.println("Produto perecível:");
+        System.out.println(perecivel);
     }
 }
