@@ -25,5 +25,8 @@ public class Main {
 
         System.out.println("A lista possui %d pessoas!".formatted(listaPessoas.size()));
         System.out.println("1a pessoa da lista: " + listaPessoas.get(0));
+
+        System.out.println("Lista completa:");
+        System.out.println(listaPessoas);
     }
 }
