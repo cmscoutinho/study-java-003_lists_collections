@@ -17,8 +17,8 @@ public class Principal {
         meuFilme.setIncluidoNoPlano(true);
 
         meuFilme.exibeFichaTecnica();
-        meuFilme.avalia(8);
         meuFilme.avalia(5);
+        meuFilme.avalia(8);
         meuFilme.avalia(10);
 
 //        System.out.println(meuFilme.somaDasAvaliacoes);
