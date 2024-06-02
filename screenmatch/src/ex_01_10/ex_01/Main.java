@@ -21,5 +21,7 @@ public class Main {
         listaPessoas.add(pessoa1);
         listaPessoas.add(pessoa2);
         listaPessoas.add(pessoa3);
+
+        System.out.println("A lista possui %d pessoas!".formatted(listaPessoas.size()));
     }
 }
