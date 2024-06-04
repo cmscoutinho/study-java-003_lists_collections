@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.saber_mais_04_09;
+package saber_mais_04_09;
 
 import java.util.HashMap;
 import java.util.Map;
