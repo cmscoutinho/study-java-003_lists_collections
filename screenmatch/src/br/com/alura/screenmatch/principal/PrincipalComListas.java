@@ -8,6 +8,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -44,6 +45,9 @@ public class PrincipalComListas {
 
         System.out.println("Lista de títulos ordenados:");
         Collections.sort(assistidos);
+        System.out.println(assistidos);
+        assistidos.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordcenando por ano: ");
         System.out.println(assistidos);
     }
 }
