@@ -7,17 +7,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> aList = new ArrayList<>();
-        aList.add("Schulz");
-        aList.add("Biden");
-        aList.add("Obrador");
+        List<String> genericList;
+        genericList = new ArrayList<>();
+        genericList.add("Schulz");
+        genericList.add("Biden");
+        genericList.add("Obrador");
+        System.out.println("ArrayList: " + genericList);
 
-        List<String> lList = new LinkedList<>();
-        lList = new LinkedList<>();
-        lList.add("Trudeau");
-        lList.add("Lula");
-
-        System.out.println("ArrayList: " + aList);
-        System.out.println("LinkedList: " + lList);
+        genericList = new LinkedList<>();
+        genericList.add("Trudeau");
+        genericList.add("Lula");
+        System.out.println("LinkedList: " + genericList);
     }
 }
