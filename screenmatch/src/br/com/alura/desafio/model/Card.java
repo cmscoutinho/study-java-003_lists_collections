@@ -45,6 +45,7 @@ public class Card {
         if (purchase.getPrice() <= balance) {
             purchaseList.add(purchase);
             balance -= purchase.getPrice();
+            System.out.println("Successful purchase: " + purchase);
             return true;
         } else {
             System.out.println("Insufficient balance for: " + purchase);
@@ -52,7 +53,7 @@ public class Card {
         }
     }
 
-    public void printPurchases() {
+    public void summary() {
         Collections.sort(purchaseList);
 
         System.out.println("************************************");
