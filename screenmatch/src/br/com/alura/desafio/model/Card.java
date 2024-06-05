@@ -3,18 +3,18 @@ package br.com.alura.desafio.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cartao {
+public class Card {
     private double limit;
     private double balance;
     private List<Purchase> purchaseList;
 
-    public Cartao(double limite) {
-        this.limit = limite;
-        this.balance = limite;
+    public Card(double limit) {
+        this.limit = limit;
+        this.balance = limit;
         this.purchaseList = new ArrayList<>();
     }
 
-    public void comprar(Purchase purchase) {
+    public void buy(Purchase purchase) {
         purchaseList.add(purchase);
     }
 }
