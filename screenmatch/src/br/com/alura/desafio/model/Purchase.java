@@ -32,6 +32,8 @@ public class Purchase implements Comparable<Purchase> {
 
     @Override
     public int compareTo(Purchase other) {
-        return;
+        if (this.getPrice() < other.getPrice()) return -1;
+        else if (this.getPrice() > other.getPrice()) return 1;
+        else return 0;
     }
 }
