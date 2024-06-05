@@ -41,12 +41,24 @@ public class Card {
         this.balance = balance;
     }
 
-    public void buy(Purchase purchase) {
-        purchaseList.add(purchase);
+    public boolean buy(Purchase purchase) {
+        if (purchase.getPrice() <= balance) {
+            purchaseList.add(purchase);
+            balance -= purchase.getPrice();
+            return true;
+        } else {
+            System.out.println("Insufficient balance for: " + purchase);
+            return false;
+        }
     }
 
     public void printPurchases() {
         Collections.sort(purchaseList);
-        System.out.println(purchaseList);
+
+        System.out.println("************************************");
+        System.out.println("CARD %d | PURCHASE SUMMARY:\n".formatted(id));
+        purchaseList.forEach(System.out::println);
+        System.out.println("************************************");
+        System.out.println("Available limit: R$ %.2f".formatted(balance));
     }
 }

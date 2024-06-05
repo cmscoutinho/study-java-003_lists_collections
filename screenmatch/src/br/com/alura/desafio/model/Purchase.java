@@ -5,7 +5,7 @@ public class Purchase implements Comparable<Purchase> {
     private double price;
 
     public Purchase(String description, double price) {
-        this.description = description;
+        this.description = description.substring(0, 1).toUpperCase() + description.substring(1);;
         this.price = price;
     }
 
@@ -27,7 +27,7 @@ public class Purchase implements Comparable<Purchase> {
 
     @Override
     public String toString() {
-        return "Product: %s | Price: R$ %.2f".formatted(description, price);
+        return "%s - R$ %.2f".formatted(description, price);
     }
 
     @Override
