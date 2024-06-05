@@ -45,12 +45,8 @@ public class Card {
         purchaseList.add(purchase);
     }
 
-    @Override
-    public String toString() {
-        return "" + purchaseList;
-    }
-
     public void printPurchases() {
         Collections.sort(purchaseList);
+        System.out.println(purchaseList);
     }
 }
